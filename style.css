@@ -1,0 +1,16 @@
+h1,h2{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: underline;
+}
+body{
+    background-color: black;
+}
+pre,p{
+    margin-left: 59px;
+    color: aliceblue;
+}
+b{
+    color: brown;
+    margin-left: 30px;
+}

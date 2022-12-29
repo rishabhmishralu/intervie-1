@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>JS INTERVIEW QUESTIONS</h1>
+<h2>DAY1</h2>
+<hr>
+<p><b>1-Difference between “ == “ and “ === “ operators.</b></p>
+<p>both are used for comparing two variable and given bollean values .==is used for check two values and called as loose eqality and ===comaring the values and as well as data type and known as sticlly opretor </p>
+
+<hr>
+<p><b>2-What is the spread operator?</b></p>
+<p>spread operator are introduce in ES6 . and use for deconstruting for non premative data types .</p>
+<hr>
+<p><b>3-What are the differences between var, let and const?</b></p>
+<p>var = var is global scope .and  it can be declared without initialization.hoisting done, with initializing as ‘ default ’ <br>
+let &const variable both are block scope.and itroduce in ES6.
+Hoisting is done , but not initialized (this is the reason for the error when we access the let/const variable before declaration/initializatio <br>
+nad one difference between let and const in let case It can be updated but cannot be re-declared into the scope.but in case of const It cannot be updated or re-declared into the scope. </p>
+<hr>
+<p><b>4-What is execution context</b></p>
+<p>The Execution Context contains the code that's currently running, and everything that aids in its execution. <br> and There are two types of execution contexts: global and function. The global execution context is created when a JavaScript script first starts to run, and it represents the global scope in JavaScript. A function execution context is created whenever a function is called, representing the function's local scope. </p>
+<hr>
+<p><b>5-What is meant by first class functions</b></p>
+<p>first class function that can be passed an argument to another function and can be return an a function and  assign as a value to a varaibles</p>
+<hr>
+<p><b>6-What are closures? Give an example of closure</b></p>
+<p>Function along with a lexicule scope from a bundlle like ,called closure.</p>
+<hr>
+<p><b>7-Explain call(), apply() and, bind() methods. Give an example of call(), apply(), bind()</b></p>
+<p>call( ) :The call() method is a predefined JavaScript method.
+
+    It can be used to invoke (call) a method with an owner object as an argument (parameter).
+</p><pre>const student={
+    name:"rishbah",
+    lastname:"mishra",
+    std:10
+}
+
+
+const student2={
+    name:"aryan",
+    lastname:"pal",
+    std:11
+}
+
+function getname(){
+    console.log(this.name);
+}
+getname.call(student)
+
+</pre>
+<p>Apply is very similar to the call function. The only difference is that in apply you can pass an array as an argument list.</p> 
+<pre>const student={
+    name:"rishbah",
+    lastname:"mishra",
+    std:10
+}
+
+
+const student2={
+    name:"aryan",
+    lastname:"pal",
+    std:11
+}
+
+function getname(n){
+    console.log(this.name+" "+n);
+}
+getname.call(student,["delhi,lucknow"])
+</pre>
+<p>bind()</p>
+<hr>
+<script src="./index.js"></script>
+</body>
+</html>
