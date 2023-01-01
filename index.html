@@ -31,7 +31,16 @@ nad one difference between let and const in let case It can be updated but canno
 <p>first class function that can be passed an argument to another function and can be return an a function and  assign as a value to a varaibles</p>
 <hr>
 <p><b>6-What are closures? Give an example of closure</b></p>
-<p>Function along with a lexicule scope from a bundlle like ,called closure.</p>
+<p>Function along with a lexicule scope together a bundlle  forms a closure.</p>
+<pre>function x(){
+    var a=10;
+    function y(b){
+       console.log( a+b); 
+
+    }
+    y(5)
+}
+x()</pre>
 <hr>
 <p><b>7-Explain call(), apply() and, bind() methods. Give an example of call(), apply(), bind()</b></p>
 <p>call( ) :The call() method is a predefined JavaScript method.

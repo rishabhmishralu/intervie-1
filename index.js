@@ -1,4 +1,4 @@
-const a=[2,3,4,4,"ram"]
+// const a=[2,3,4,4,"ram"]
 // const b=[1,5,6,8]
 // const c=[...a,...b]
 // console.log(c);
@@ -25,3 +25,29 @@ const a=[2,3,4,4,"ram"]
 // }
 // getname.call(student,["delhi,lucknow"])
 
+
+
+// function x(){
+//     var a=7;
+//     function y(){
+//         console.log(a);
+//     }
+// //    y()
+// return y
+   
+// }
+// var z=x();
+// console.log(z);
+// x()
+// z()
+// closure
+
+// function x(){
+//     var a=10;
+//     function y(b){
+//        console.log( a+b); 
+
+//     }
+//     y(5)
+// }
+// x()
