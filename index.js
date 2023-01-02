@@ -51,3 +51,38 @@
 //     y(5)
 // }
 // x()
+
+// let  printfullname=function(){
+//     console.log(this.name);
+//    }
+    
+// const student={
+//     name:"rishbah",
+//     lastname:"mishra",
+//     std:10
+// }
+// printfullname.call(student)
+
+
+// const student2={
+//     name:"aryan",
+//     lastname:"pal",
+
+// }
+// printfullname.call(student2)
+
+
+
+// bind methid
+
+function student(e){
+    console.log(this.name,e);
+}
+
+let student1={
+    name:"rishabh",
+    age:12
+}
+
+let copy=student.bind(student1,"rishabh mishra")
+copy()

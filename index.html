@@ -17,6 +17,25 @@
 <hr>
 <p><b>2-What is the spread operator?</b></p>
 <p>spread operator are introduce in ES6 . and use for deconstruting for non premative data types .</p>
+<pre>const a=[2,3,4,5,6]
+    const b=["risahbh",...a]
+    console.log(b)</pre>
+    <p>rest oprator</p>
+    <pre>const a=["ram",'yash',2,3,4,5,6]
+        const b=[x,y,...rest]=a
+        let sum=0;
+        for ( let i in rest )
+        sum+=rest[i]
+        console.log(sum);
+        
+        
+        function sum(x,...rest){
+            let sum=0;
+        for ( let i in rest )
+        sum+=rest[i]
+        console.log(sum);
+        }
+        sum(2,3,4)</pre>
 <hr>
 <p><b>3-What are the differences between var, let and const?</b></p>
 <p>var = var is global scope .and  it can be declared without initialization.hoisting done, with initializing as ‘ default ’ <br>
@@ -65,6 +84,43 @@ function getname(){
 getname.call(student)
 
 </pre>
+
+<pre>const student={
+    name:"rishbah",
+    lastname:"mishra",
+    std:10,
+
+   printfullname:function(){
+    console.log(this.name);
+   }
+    
+}
+student.printfullname()
+
+
+const student2={
+    name:"aryan",
+    lastname:"pal",
+
+}</pre>
+<pre>let  printfullname=function(){
+    console.log(this.name);
+   }
+    
+const student={
+    name:"rishbah",
+    lastname:"mishra",
+    std:10
+}
+printfullname.call(student)
+
+
+const student2={
+    name:"aryan",
+    lastname:"pal",
+
+}
+printfullname.call(student2)</pre>
 <p>Apply is very similar to the call function. The only difference is that in apply you can pass an array as an argument list.</p> 
 <pre>const student={
     name:"rishbah",
@@ -84,7 +140,19 @@ function getname(n){
 }
 getname.call(student,["delhi,lucknow"])
 </pre>
-<p>bind()</p>
+<p>bind():
+    bind method is same as call method only differnce in bind method  bind the method and object and copy of the method  which can be called letter.</p>
+<pre>function student(e){
+    console.log(this.name,e);
+}
+
+let student1={
+    name:"rishabh",
+    age:12
+}
+
+let copy=student.bind(student1,"rishabh mishra")
+copy()</pre>
 <hr>
 <script src="./index.js"></script>
 </body>
